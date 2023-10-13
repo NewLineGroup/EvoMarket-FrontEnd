@@ -1,0 +1,24 @@
+name: dotnet package
+
+on: 
+  push:
+    branches: develop
+
+jobs:
+  deploy:
+    
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        working-directory: .
+        run: docker-compose build
+      - name: Deploy
+        working-directory: .
+        run: |
+              docker-compose down
+              docker-compose up -d
+      
+  
+    
