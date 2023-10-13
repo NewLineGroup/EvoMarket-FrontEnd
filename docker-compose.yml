@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  EvoMarket-FrontEnd: 
+    image: EvoMarket:v1
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "8080:8080"
