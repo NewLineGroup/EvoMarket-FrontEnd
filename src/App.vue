@@ -1,10 +1,12 @@
-<script setup>
- 
+<script >
+import Home from "./components/Home.vue";
+
+
 </script>
 
 <template>
-  <div>
-   
+  <div class = "app">
+    <Home/>
   </div>
 </template>
 
