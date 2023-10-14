@@ -1,14 +1,17 @@
 <script>
-import Navbar from "./components/Navbar.vue"
+import Navbar from "./Navbar.vue"
+
 </script>
 
 <template>
-   <div>
-    
+   <div class = "home">
+    <Navbar/>
    </div>
 </template>
 
 <style>
-
+.home{
+    display: flex;
+}
 </style>
 
